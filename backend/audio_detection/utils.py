@@ -3,7 +3,7 @@ import torch
 import librosa
 import numpy as np
 from transformers import AutoModelForAudioClassification, Wav2Vec2FeatureExtractor
-from moviepy.editor import VideoFileClip
+from moviepy import VideoFileClip
 import os
 
 MODEL_NAME = "MelodyMachine/Deepfake-audio-detection-V2"

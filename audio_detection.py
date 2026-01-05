@@ -2,13 +2,11 @@ import torch
 import librosa
 import numpy as np
 from transformers import AutoModelForAudioClassification, Wav2Vec2FeatureExtractor
-from moviepy.editor import VideoFileClip
+from moviepy import VideoFileClip
 import os
 
 # 1. Configuration
 MODEL_NAME = "MelodyMachine/Deepfake-audio-detection-V2"
-# Alternative model if the above is too heavy or unavailable:
-# MODEL_NAME = "mo-thecreator/Deepfake-audio-detection"
 
 def load_audio(file_path, target_sr=16000):
     """
